@@ -20,47 +20,51 @@
 <body>
     
     <header>
-        <div class="contenedorTitulo">
-            <img src="../imgs/logo.png" alt="Logo Furor City" class="logo">
-            <h1>Furor City</h1>
-        </div>
+        <nav class="navbar navbar-dark bg-dark px-3 bg-transparent gap-3">
+            <div class="container-fluid gap-3 p-0">
+                <!-- Logo -->
+                <div class="contenedorLogo">
+                    <img src="../imgs/logo.png" alt="Logo Furor City" class="logo">
+                </div>
 
-        <!-- Sacado de Bootstrap -->
-        <p class="m-0 pt-3 pb-3 ps-2 enlaceHome"><a href="../index.html"><button type="button" class="btn btn-outline-primary">Volver a home</button></a></p>
+                <!-- Título -->
+                <div class="contenedorTitulo">
+                    <h1>Furor City</h1>
+                </div>
 
-        <!-- Sacado de Bootstrap -->
-        <section class="contenedorBusqueda">
-            <div class="container-fluid">
+                <!-- Botón de menú hamburguesa -->
+                <div class="contenedorPaginas">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCompleto" aria-controls="menuCompleto" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Menú con los links -->
+                <div class="collapse navbar-collapse mt-3" id="menuCompleto">
+                    <ul class="navbar-nav w-100 text-center">
+                        <!-- Links de navegación -->
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/nosotros.html">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Búsqueda y login -->
+            <div class="contenedorBusqueda w-100">
                 <form action="/submit" class="d-flex form-busqueda" role="search">
-                    <input class="form-control me-2 barra-busqueda" type="search" placeholder="¿Qué estás buscando?" aria-label="Search"/>
+                    <input class="form-control me-2 barra-busqueda centrado" type="search" placeholder="¿Qué estás buscando?" aria-label="Search"/>
                     <button class="btn btn-outline-success boton-busqueda" type="submit">BUSCAR</button>
                 </form>
+                <a href="./paginas/login.html" class="inicio-sesion">Ingresá/Registrate</a>
             </div>
-    
-            <a href="../paginas/login.html" class="inicio-sesion">Iniciar Sesión</a>
-        </section>
-
-        <!-- Sacado de Bootstrap -->
-        <ul class="nav justify-content-around bg-personalizado mt-5">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../paginas/nosotros.html">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#FAQ">FAQ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../paginas/productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#redes">Redes Sociales</a>
-            </li>
-        </ul>
+        </nav>
     </header>
 
     <main class="centrado">
+        <h2>PRODUCTOS</h2>
 
         <section class="p-4">
             <img src="../imgs/remeraNike.webp" alt="Remera Nike Sportswear Blanca" class="producto-imagen animacion">

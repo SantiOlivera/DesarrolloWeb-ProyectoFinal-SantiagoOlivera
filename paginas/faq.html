@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilo/estilo.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <title>Preguntas Frecuentes</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark px-3 bg-transparent gap-3">
+            <div class="container-fluid gap-3 p-0">
+                <!-- Logo -->
+                <div class="contenedorLogo">
+                    <img src="../imgs/logo.png" alt="Logo Furor City" class="logo">
+                </div>
+
+                <!-- Título -->
+                <div class="contenedorTitulo">
+                    <h1>Furor City</h1>
+                </div>
+
+                <!-- Botón de menú hamburguesa -->
+                <div class="contenedorPaginas">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCompleto" aria-controls="menuCompleto" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Menú con los links -->
+                <div class="collapse navbar-collapse mt-3" id="menuCompleto">
+                    <ul class="navbar-nav w-100 text-center">
+                        <!-- Links de navegación -->
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/nosotros.html">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Búsqueda y login -->
+            <div class="contenedorBusqueda w-100">
+                <form action="/submit" class="d-flex form-busqueda" role="search">
+                    <input class="form-control me-2 barra-busqueda centrado" type="search" placeholder="¿Qué estás buscando?" aria-label="Search"/>
+                    <button class="btn btn-outline-success boton-busqueda" type="submit">BUSCAR</button>
+                </form>
+                <a href="./paginas/login.html" class="inicio-sesion">Ingresá/Registrate</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="centrado">Preguntas Frecuentes</h2>
+
+        <!-- Sacado de Bootstrap -->
+        <section class="p-4">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cuánto tarda el envío?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Nuestros envíos se procesan rápidamente y llegan a todo el país. El tiempo estimado varía según tu ubicación, pero en general, las entregas demoran entre 2 y 5 días hábiles. Ofrecemos opciones de envío estándar y exprés. Además, podés seguir el estado de tu pedido con un código de seguimiento. Si surge algún inconveniente, nuestro equipo de atención al cliente está disponible para ayudarte. Recordá verificar los datos al finalizar la compra para evitar demoras innecesarias.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué métodos de pago aceptan?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Aceptamos múltiples métodos para que puedas abonar como prefieras. Podés pagar con tarjetas de crédito, débito, transferencias bancarias y billeteras virtuales como Mercado Pago. También contamos con promociones y cuotas sin interés en algunos productos. Todos los pagos se procesan a través de plataformas seguras. No almacenamos datos bancarios en nuestro sitio. Si tenés algún problema al pagar, no dudes en contactarnos para recibir asistencia personalizada y rápida.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Se puede cambiar un producto?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Sí, podés cambiar productos si no estás conforme o si hubo un error. Los cambios deben solicitarse dentro de los 10 días de recibido el pedido. El artículo debe estar sin uso, con etiquetas y en su empaque original. Cubrimos el costo de envío si el error fue nuestro. En caso contrario, el cliente deberá abonar el traslado. Para iniciar el proceso, completá el formulario de contacto y nuestro equipo te responderá con los pasos a seguir detalladamente.</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

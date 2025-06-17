@@ -1,0 +1,14 @@
+/* Mixins */
+@mixin gridContenedor ($disGrid, $columns, $gap, $padding) {
+    display: $disGrid;
+    grid-template-columns: $columns;
+    gap: $gap;
+    padding: $padding;
+}
+
+@mixin imgBackgroundPublicidad ($bgImage, $bgPosition, $bgRepeat, $bgSize) {
+    background-image: $bgImage;
+    background-position: $bgPosition;
+    background-repeat: $bgRepeat;
+    background-size: $bgSize;
+}

@@ -1,0 +1,159 @@
+/* ----- INICIO MAIN ----- */
+
+main {
+    background-color: $backgroundBody;
+    color: $colorBlanco;
+    margin-bottom: 40px;
+}
+
+.imgPublicidadIndex {
+    @include imgBackgroundPublicidad (url(../imgs/publicidad.png), top, no-repeat, cover);
+    padding: 8rem;
+}
+
+.imgPublicidadProductos {
+    @include imgBackgroundPublicidad (url(../imgs/publicidadProductosImg.png), center, repeat, contain);
+    padding: 6rem;
+}
+
+.titulo-publicidad-index {
+    @extend %titulosPublicidades;
+}
+
+
+h2 {
+    text-decoration: underline;
+    color: $colorVerdeH2;
+    font-style: italic;
+    padding: 20px;
+}
+
+
+
+/* Edición del main de las páginas "index" y "productos" */
+
+.contenedorProductoIndex {
+    @extend %flexContenedor;
+}
+
+.contenedorArtIndex {
+    // text-align: center;
+    // justify-items: center;
+    // align-items: center;
+    // border: 1px solid white;
+    @extend %contenedorArticulos;
+    width: 18rem;
+    padding: 20px;
+}
+
+.producto-imagen {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.precio-producto {
+    color: $colorVerdePrecio;
+    margin: 0;
+}
+
+.precio-producto span {
+    text-decoration: line-through;
+    color: red;
+}
+
+.boton-verMas{
+    color: blue;
+    font-size: 18px;
+}
+
+.boton-comprar {
+    // background-color: $colorNegro;
+    // color: $colorAmarillo;
+
+    @extend %diseñoBoton;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* Edición del main de las páginas "index" y "productos" */
+
+
+/* Este solo aplica a la página "productos" */
+.titulo-publicidad-productos {
+    @extend %titulosPublicidades;
+}
+
+.titulo-producto{
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(76, 65, 223);
+}  
+
+.contenedorArtProducto {
+    @include gridContenedor (grid, 1fr 3fr, 10px, 20px);
+    width: 100%;
+    
+    @extend %contenedorArticulos;
+}
+
+
+/* Este solo aplica a la página "productos" */
+
+
+
+
+
+
+/* Grid | este solo aplica en la pagina de "contacto" */
+.contenedorContacto {
+    // display: grid;
+    // grid-template-columns: 1fr 3fr;
+    // gap: 30px;
+    // width: 100%;
+    // padding: 15px;
+
+    @include gridContenedor(grid, 1fr 2fr, 30px, 15px);
+}
+
+.boton-enviar {
+    @extend %diseñoBoton;
+    padding: 6px 12px;
+}
+
+/* Grid | este solo aplica en la pagina de "contacto" */
+
+
+.contraseñaLogin {
+    margin-left: 3rem;
+}
+
+
+/* Edicion lista de preguntas (FAQ) */
+.accordion-item {
+  background-color: #1e1e1e;
+  border: 1px solid #2c2c2c;
+}
+
+.accordion-button {
+  background-color: #1e1e1e;
+  color: $colorVerdePrecio;
+}
+
+.accordion-body {
+  background-color: #191919;
+  color: $colorBlanco;
+}
+
+/* Acá no se que paso pero antes de pasarlo a scss solo tenía "color: green" y ahora si lo cambio se va el color */
+.accordion-button::after {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(33%) saturate(655%) hue-rotate(76deg) brightness(93%) contrast(90%);
+}
+/* Edicion lista de preguntas (FAQ) */
+
+
+.contenedorLogin {
+    padding: 30px;
+}
+
+
+/* ----- FIN MAIN ----- */

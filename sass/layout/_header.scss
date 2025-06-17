@@ -1,4 +1,5 @@
 /* ----- INICIO HEADER ----- */
+/* el header es el mismo en todas las páginas */
 .contenedorBarraTop {
     padding: 10px 16px;
 }
@@ -16,14 +17,12 @@ h1 {
     margin-bottom: 0;
 }
 
-/* Grid */
 .contenedorBusqueda {
     @include gridContenedor (grid, 4fr 2fr, 4rem, 3rem 0rem);
 
     align-items: center;
     justify-items: end;
 } 
-/* Grid */
 
 .form-busqueda {
     text-align: end;

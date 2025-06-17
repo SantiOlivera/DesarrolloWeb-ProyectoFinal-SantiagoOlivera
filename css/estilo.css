@@ -2,14 +2,6 @@
 /* Variables */
 /* Mixins */
 /* Extends */
-.contenedorProductoIndex {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 20px;
-  flex-wrap: wrap;
-  row-gap: 3rem;
-}
-
 .boton-busqueda, .boton-enviar, .boton-comprar {
   background-color: #000;
   color: #FFD700;
@@ -32,6 +24,7 @@
 }
 
 /* ----- INICIO FOOTER ----- */
+/* el footer es el mismo en todas las páginas */
 footer {
   background-color: #2C3E50;
   color: #ffffff;
@@ -50,38 +43,17 @@ footer {
 
 /* ----- FIN FOOTER ----- */
 /* ----- INICIO MAIN ----- */
+/* edición de general del main */
 main {
   background-color: #121212;
   color: #ffffff;
   margin-bottom: 40px;
 }
 
-.imgPublicidadIndex {
-  background-image: url(../imgs/publicidad.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 8rem;
-}
-
-.imgPublicidadProductos {
-  background-image: url(../imgs/publicidadProductosImg.png);
-  background-position: center;
-  background-repeat: repeat;
-  background-size: contain;
-  padding: 6rem;
-}
-
 h2 {
   text-decoration: underline;
   color: rgb(27, 192, 156);
   font-style: italic;
-  padding: 20px;
-}
-
-/* Edición del main de las páginas "index" y "productos" */
-.contenedorArtIndex {
-  width: 18rem;
   padding: 20px;
 }
 
@@ -101,22 +73,42 @@ h2 {
   color: red;
 }
 
+/* edición de general del main */
+/* Edición de la página "index" */
+.imgPublicidadIndex {
+  background-image: url(../imgs/publicidadIndex.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem;
+}
+
+.contenedorProductoIndex {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.contenedorArtIndex {
+  width: 18rem;
+  padding: 20px;
+}
+
 .boton-verMas {
   color: blue;
   font-size: 18px;
 }
 
-.boton-comprar {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-/* Edición del main de las páginas "index" y "productos" */
-/* Este solo aplica a la página "productos" */
-.titulo-producto {
-  text-decoration: underline;
-  font-style: italic;
-  color: rgb(76, 65, 223);
+/* Edición de la página "index" */
+/* Edición de la página "productos" */
+.imgPublicidadProductos {
+  background-image: url(../imgs/publicidadProductos.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  padding: 6rem;
 }
 
 .contenedorArtProducto {
@@ -127,8 +119,19 @@ h2 {
   width: 100%;
 }
 
-/* Este solo aplica a la página "productos" */
-/* Grid | este solo aplica en la pagina de "contacto" */
+.titulo-producto {
+  text-decoration: underline;
+  font-style: italic;
+  color: rgb(76, 65, 223);
+}
+
+.boton-comprar {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Edición de la página "productos" */
+/* Edición de la página "contacto" */
 .contenedorContacto {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -140,12 +143,8 @@ h2 {
   padding: 6px 12px;
 }
 
-/* Grid | este solo aplica en la pagina de "contacto" */
-.contraseñaLogin {
-  margin-left: 3rem;
-}
-
-/* Edicion lista de preguntas (FAQ) */
+/* Edición de la página "contacto" */
+/* Edicion de la página "faq" */
 .accordion-item {
   background-color: #1e1e1e;
   border: 1px solid #2c2c2c;
@@ -166,13 +165,20 @@ h2 {
   filter: brightness(0) saturate(100%) invert(67%) sepia(33%) saturate(655%) hue-rotate(76deg) brightness(93%) contrast(90%);
 }
 
-/* Edicion lista de preguntas (FAQ) */
+/* Edicion de la página "faq" */
+/* Edición de la página "login" */
 .contenedorLogin {
   padding: 30px;
 }
 
+.contraseñaLogin {
+  margin-left: 3rem;
+}
+
+/* Edición de la página "login" */
 /* ----- FIN MAIN ----- */
 /* ----- INICIO HEADER ----- */
+/* el header es el mismo en todas las páginas */
 .contenedorBarraTop {
   padding: 10px 16px;
 }
@@ -190,7 +196,6 @@ h1 {
   margin-bottom: 0;
 }
 
-/* Grid */
 .contenedorBusqueda {
   display: grid;
   grid-template-columns: 4fr 2fr;
@@ -200,7 +205,6 @@ h1 {
   justify-items: end;
 }
 
-/* Grid */
 .form-busqueda {
   text-align: end;
   height: 35px;
@@ -243,7 +247,6 @@ h1 {
     text-align: center;
   }
   .contenedorBusqueda {
-    display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;
@@ -279,9 +282,6 @@ h1 {
   }
   p {
     font-size: 14px;
-  }
-  article {
-    width: 13rem;
   }
   h3 {
     font-size: 18px;

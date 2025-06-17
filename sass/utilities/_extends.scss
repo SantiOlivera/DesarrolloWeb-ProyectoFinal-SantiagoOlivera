@@ -1,13 +1,5 @@
 /* Extends */
 
-%flexContenedor {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    flex-wrap: wrap;
-    row-gap: 3rem;
-}
-
 %diseñoBoton {
     background-color: $colorNegro;
     color: $colorAmarillo;

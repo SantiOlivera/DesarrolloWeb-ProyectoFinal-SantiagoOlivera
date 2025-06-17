@@ -1,48 +1,15 @@
 /* ----- INICIO MAIN ----- */
-
+/* edición de general del main */
 main {
     background-color: $backgroundBody;
     color: $colorBlanco;
     margin-bottom: 40px;
 }
 
-.imgPublicidadIndex {
-    @include imgBackgroundPublicidad (url(../imgs/publicidad.png), top, no-repeat, cover);
-    padding: 8rem;
-}
-
-.imgPublicidadProductos {
-    @include imgBackgroundPublicidad (url(../imgs/publicidadProductosImg.png), center, repeat, contain);
-    padding: 6rem;
-}
-
-.titulo-publicidad-index {
-    @extend %titulosPublicidades;
-}
-
-
 h2 {
     text-decoration: underline;
     color: $colorVerdeH2;
     font-style: italic;
-    padding: 20px;
-}
-
-
-
-/* Edición del main de las páginas "index" y "productos" */
-
-.contenedorProductoIndex {
-    @extend %flexContenedor;
-}
-
-.contenedorArtIndex {
-    // text-align: center;
-    // justify-items: center;
-    // align-items: center;
-    // border: 1px solid white;
-    @extend %contenedorArticulos;
-    width: 18rem;
     padding: 20px;
 }
 
@@ -61,33 +28,55 @@ h2 {
     text-decoration: line-through;
     color: red;
 }
+/* edición de general del main */
+
+
+
+
+
+/* Edición de la página "index" */
+.imgPublicidadIndex {
+    @include imgBackgroundPublicidad (url(../imgs/publicidadIndex.png), top, no-repeat, cover);
+    padding: 8rem;
+}
+
+.titulo-publicidad-index {
+    @extend %titulosPublicidades;
+}
+
+.contenedorProductoIndex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+}
+
+.contenedorArtIndex {
+    @extend %contenedorArticulos;
+    width: 18rem;
+    padding: 20px;
+}
 
 .boton-verMas{
     color: blue;
     font-size: 18px;
 }
+/* Edición de la página "index" */
 
-.boton-comprar {
-    // background-color: $colorNegro;
-    // color: $colorAmarillo;
 
-    @extend %diseñoBoton;
-    font-weight: 700;
-    font-size: 20px;
+
+
+
+/* Edición de la página "productos" */
+.imgPublicidadProductos {
+    @include imgBackgroundPublicidad (url(../imgs/publicidadProductos.png), center, repeat, contain);
+    padding: 6rem;
 }
-/* Edición del main de las páginas "index" y "productos" */
 
-
-/* Este solo aplica a la página "productos" */
 .titulo-publicidad-productos {
     @extend %titulosPublicidades;
 }
-
-.titulo-producto{
-    text-decoration: underline;
-    font-style: italic;
-    color: rgb(76, 65, 223);
-}  
 
 .contenedorArtProducto {
     @include gridContenedor (grid, 1fr 3fr, 10px, 20px);
@@ -96,22 +85,25 @@ h2 {
     @extend %contenedorArticulos;
 }
 
+.titulo-producto{
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(76, 65, 223);
+}  
 
-/* Este solo aplica a la página "productos" */
+.boton-comprar {
+    @extend %diseñoBoton;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* Edición de la página "productos" */
 
 
 
 
 
-
-/* Grid | este solo aplica en la pagina de "contacto" */
+/* Edición de la página "contacto" */
 .contenedorContacto {
-    // display: grid;
-    // grid-template-columns: 1fr 3fr;
-    // gap: 30px;
-    // width: 100%;
-    // padding: 15px;
-
     @include gridContenedor(grid, 1fr 2fr, 30px, 15px);
 }
 
@@ -119,16 +111,13 @@ h2 {
     @extend %diseñoBoton;
     padding: 6px 12px;
 }
-
-/* Grid | este solo aplica en la pagina de "contacto" */
-
-
-.contraseñaLogin {
-    margin-left: 3rem;
-}
+/* Edición de la página "contacto" */
 
 
-/* Edicion lista de preguntas (FAQ) */
+
+
+
+/* Edicion de la página "faq" */
 .accordion-item {
   background-color: #1e1e1e;
   border: 1px solid #2c2c2c;
@@ -148,12 +137,20 @@ h2 {
 .accordion-button::after {
   filter: brightness(0) saturate(100%) invert(67%) sepia(33%) saturate(655%) hue-rotate(76deg) brightness(93%) contrast(90%);
 }
-/* Edicion lista de preguntas (FAQ) */
+/* Edicion de la página "faq" */
 
 
+
+
+
+/* Edición de la página "login" */
 .contenedorLogin {
     padding: 30px;
 }
 
+.contraseñaLogin {
+    margin-left: 3rem;
+}
+/* Edición de la página "login" */
 
 /* ----- FIN MAIN ----- */

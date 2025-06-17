@@ -19,7 +19,6 @@
     }
 
     .contenedorBusqueda {
-        display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 20px;
@@ -65,10 +64,6 @@
         font-size: 14px;
     }
 
-    article {
-        width: 13rem;
-    }
-
     h3 {
         font-size: 18px;
     }
@@ -77,8 +72,8 @@
         width: 10rem;
         height: auto;
     }
-
     /* Responsive general */
+
 
 
     /* Responsive de la página "Index" */
@@ -89,7 +84,6 @@
     .contenedorArtIndex {
         width: 14rem;
     }
-    
     /* Responsive de la página "Index" */
 
 
@@ -107,16 +101,10 @@
         grid-template-columns: 1fr;
     }
 
-    
     .titulo-producto {
         font-size: 18px;
     }
-
-
-    
     /* Resposive de la página "Productos" */
-
-
 
 
 
@@ -138,12 +126,9 @@
     .contenedorContacto div input[type="submit"] {
         width: 100%;
     }
-
     /* Responsive de la página "Contacto" */
 
 
-   
-    
     
     /* Responsive de la pag "Login" */
     .contenedorLogin {

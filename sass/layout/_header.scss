@@ -2,56 +2,56 @@
 /* el header es el mismo en todas las páginas */
 .contenedorBarraTop {
     padding: 10px 16px;
+
+    .logo {
+        border-radius: 100%;
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+
+        h1 {
+            color: $colorAmarillo;
+            font-size: 5rem;
+            margin-bottom: 0;
+        }
+    }
 }
 
-.logo {
-    border-radius: 100%;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
-} 
-
-h1 {
-    color: $colorAmarillo;
-    font-size: 5rem;
-    margin-bottom: 0;
-}
 
 .contenedorBusqueda {
     @include gridContenedor (grid, 4fr 2fr, 4rem, 3rem 0rem);
 
     align-items: center;
     justify-items: end;
+
+    .form-busqueda {
+        text-align: end;
+        height: 35px;
+
+        .barra-busqueda {
+            font-size: 15px;
+            border: 1px solid $colorBlanco;
+            background-color: $colorNegro;
+
+            .barra-busqueda::placeholder {
+                color: $colorBlanco;
+
+                .boton-busqueda {
+                    @extend %diseñoBoton;
+
+                    .inicio-sesion {
+                        font-size: 17px;
+                        color: $colorAmarillo;
+                    }
+                }
+            }
+        }
+    }
 } 
 
-.form-busqueda {
-    text-align: end;
-    height: 35px;
-}
-
-.barra-busqueda {
-    font-size: 15px;
-    border: 1px solid $colorBlanco;
-    background-color: $colorNegro;
-}
-
-.barra-busqueda::placeholder {
-  color: $colorBlanco;
-}
-
-.boton-busqueda {
-    @extend %diseñoBoton;
-}
-
-.inicio-sesion {
-    font-size: 17px;
-    color: $colorAmarillo;
-}
 
 .nav-link {
     color: $colorAmarillo;
     font-weight: 800;
 }
-
-
 /* ----- FIN HEADER ----- */

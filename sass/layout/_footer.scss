@@ -6,15 +6,14 @@ footer {
     color: $colorBlanco;
     padding: 20px;
     height: 35vh;
-}
 
-.lista-redes {
-    list-style: none;
-}
+    .lista-redes {
+        list-style: none;
 
-.lista-redes li a {
-    font-size: 18px;
-    color: #00bfff;
+        .lista-redes li a {
+            font-size: 18px;
+            color: #00bfff;
+        }
+    }
 }
-
 /* ----- FIN FOOTER ----- */

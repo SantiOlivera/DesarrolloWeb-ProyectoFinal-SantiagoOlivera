@@ -11,7 +11,7 @@
     text-align: center;
     justify-items: center;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid $colorBlanco;
 }
 
 %titulosPublicidades {
@@ -19,4 +19,21 @@
     font-weight: 800;
     text-decoration: solid;
     font-size: 20px;
+}
+
+%contenedorFlex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+}
+
+%diseñoCartas {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }

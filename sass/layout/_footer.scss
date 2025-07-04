@@ -5,15 +5,20 @@ footer {
     background-color: $backgroundFooter;
     color: $colorBlanco;
     padding: 20px;
-    height: 35vh;
+    text-align: center;
+
+    .parrafoFooter {
+        font-size: 16px;
+    }
 
     .lista-redes {
         list-style: none;
-
-        .lista-redes li a {
-            font-size: 18px;
-            color: #00bfff;
-        }
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 0;
+        margin: 0;
     }
 }
+
 /* ----- FIN FOOTER ----- */

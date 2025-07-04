@@ -1,66 +1,70 @@
 /* RESPONSIVE */
 
-@media (min-width: 320px) and (max-width: 600px){
+@media (min-width: 320px) and (max-width: 600px) {
+
     /* Responsive general */
     .contenedorBarraTop {
-        padding: 20px 0px;
+        padding: 20px 5px;
+
+        .logo {
+            height: 50px;
+            width: 50px;
+        }
+
+        h1 {
+            font-size: 40px;
+            padding-right: 0;
+            text-align: center;
+        }
+
+        .menuBusqueda {
+            width: 50px;
+            height: 40px;
+            padding: 4px;
+        }
     }
 
-    .logo {
-        height: 50px;
-        width: 50px;
-    }
 
-    h1 {
-        font-size: 40px;
-        padding-right: 0;
-        text-align: center;
-    }
 
     .contenedorBusqueda {
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 20px;
         padding: 30px;
+
+        .form-busqueda {
+            height: 28px;
+
+            .barra-busqueda {
+                width: 8rem;
+                font-size: 11px;
+                padding: 6px 3px;
+            }
+
+            .boton-busqueda {
+                font-size: 11px;
+            }
+        }
+
+        .inicio-sesion {
+            font-size: 14px;
+        }
     }
 
-    .form-busqueda {
-        height: 28px;
-        margin-right: 0;
-        gap: 0;
-    }
 
-    .barra-busqueda {
-        width: 8rem;
-        font-size: 11px;
-        padding: 6px 3px;
-    }
-
-    .boton-busqueda {
-        font-size: 11px;
-    }
-
-    .inicio-sesion {
-        font-size: 14px;
-    }
-
-    .contenedorLinks {
+    .menuLinks {
         width: 100%;
-    }
-
-    .publicidad {
-        padding: 2rem;
     }
 
     h2 {
         text-align: center;
         margin-bottom: 0;
-        font-size: 22px;
+        font-size: 20px;
         padding: 20px 0px;
     }
 
     p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     h3 {
@@ -71,6 +75,11 @@
         width: 10rem;
         height: auto;
     }
+
+    .precio-producto {
+        font-size: 15px;
+    }
+
     /* Responsive general */
 
 
@@ -78,11 +87,18 @@
     /* Responsive de la página "Index" */
     .imgPublicidadIndex {
         padding: 2rem;
+
+        .titulo-publicidad-index {
+            font-size: 18px;
+        }
     }
-    
-    .contenedorArtIndex {
-        width: 14rem;
+
+    .contenedorProductoIndex {
+        .contenedorArtIndex {
+            width: 14rem;
+        }
     }
+
     /* Responsive de la página "Index" */
 
 
@@ -90,58 +106,79 @@
     /* Resposive de la página "Productos" */
     .imgPublicidadProductos {
         padding: 2rem;
+
+        .titulo-publicidad-productos {
+            font-size: 18px;
+        }
     }
 
-    .titulo-publicidad-productos {
-        font-size: 18px;
-    }
-    
     .contenedorArtProducto {
         grid-template-columns: 1fr;
     }
 
-    .titulo-producto {
-        font-size: 18px;
-    }
     /* Resposive de la página "Productos" */
+
+
+
+
+
+    /* Responsive de la página "nosotros" */
+    .contenedorNosotros {
+        padding: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .contenedorCartas {
+        padding: 30px;
+
+        .cartaNosotros {
+            padding: 20px;
+        }
+    }
+
+    /* Responsive de la página "nosotros" */
+
+
 
 
 
     /* Responsive de la página "Contacto" */
     .contenedorContacto {
         grid-template-columns: 1fr;
-        text-align: center;
         padding: 20px 40px;
-    }
-    
-    .contenedorContacto div label[for="mensaje"] {
-        width: 100%;
+
+        .boton-enviar {
+            grid-column: auto;
+        }
     }
 
-    .contenedorContacto div textarea[id="mensaje"] {
-        width: 100%;
+    .contenedorCartas {
+        .cartaContacto {
+            @extend %diseñoCartas;
+            width: 15rem;
+            padding: 20px;
+
+            img {
+                width: 48px;
+                height: auto;
+            }
+        }
     }
 
-    .contenedorContacto div input[type="submit"] {
-        width: 100%;
-    }
     /* Responsive de la página "Contacto" */
 
 
-    
-    /* Responsive de la pag "Login" */
-    .contenedorLogin {
-       justify-content: center;
-       text-align: center;
-       padding: 10px 35px;
-    }
-    
-    .contraseñaLogin{
-        margin-left: 0;
+
+
+    /* Responsive de la página "faq" */
+    .accordion-header {
+        padding: 5px;
     }
 
-    .contenedorLogin input[type="submit"] {
-        width: 80%;
+    .accordion-body {
+        strong {
+            font-size: 13px;
+        }
     }
-    /* Responsive de la pag "Login" */
+    /* Responsive de la página "faq" */
 }

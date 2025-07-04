@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
@@ -15,47 +14,63 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Metadatos -->
+    <!-- Palabras claves -->
+    <meta name="keywords" content="productos deportivos, ropa deportiva, zapatillas, remeras, pantalones, Furor City tienda, indumentaria urbana, ropa original, moda deportiva, comprar online">
+
+    <!-- Descripción de la página -->
+    <meta name="description" content="Explorá nuestros productos originales con estilo urbano y calidad deportiva. Encontrá zapatillas, remeras, pantalones y más, diseñados para acompañarte en cada desafío o entrenamiento.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Furor City" />
+    <meta property="og:url" content="https://dw-proyectofinal-santiagoolivera.netlify.app" />
+    <meta property="og:image" content="" />
+
 
     <title>Productos</title>
 </head>
 
 <body>
     <header>
-        <!-- nav del buscador de la pagina (queda contenido dentro del "menú hamburguesa") -->
-        <nav class="navbar navbar-dark bg-dark bg-transparent contenedorBarraTop">
+        <div class="navbar navbar-dark bg-dark bg-transparent contenedorBarraTop">
             <div class="container-fluid p-0">
                 <!-- Logo -->
-                <a href="../index.html"><img src="../imgs/logo.png" alt="Logo Furor City" class="logo"></a>
+                <a href="../index.html"><img src="../imgs/logo.png" alt="Logo de la tienda Furor City" class="logo animate__animated animate__zoomIn"></a>
 
                 <!-- Título -->
-                <h1>Furor City</h1>
+                <h1 class="animate__animated animate__pulse animate__slow">Furor City</h1>
 
                 <!-- Botón de menú hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCompleto"
-                    aria-controls="menuCompleto" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler menuBusqueda" type="button" data-bs-toggle="collapse" data-bs-target="#menuCompleto" aria-controls="menuCompleto" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- buscador de la pagina (queda contenido dentro del "menú hamburguesa") -->
                 <div class="collapse navbar-collapse mt-3" id="menuCompleto">
                     <!-- Búsqueda y login -->
                     <div class="contenedorBusqueda w-100">
                         <form action="/submit" class="d-flex form-busqueda" role="search">
-                            <input class="form-control me-2 barra-busqueda centrado" type="search"
-                                placeholder="¿Qué estás buscando?" aria-label="Search">
+                            <input class="form-control me-2 barra-busqueda" type="search" placeholder="¿Qué estás buscando?" aria-label="Search" />
                             <button class="btn btn-outline-success boton-busqueda" type="submit">BUSCAR</button>
                         </form>
-                        <a href="../paginas/login.html" class="inicio-sesion">Ingresá/Registrate</a>
+                        <a href="#" class="inicio-sesion">Ingresá/Registrate</a>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
 
         <!-- nav de las páginas -->
         <nav class="navbar navbar-expand-lg w-100" style="background-color: gray;" data-bs-theme="light">
             <div class="container-fluid centrado">
-                <div class="contenedorLinks">
+                <div class="menuLinks">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -66,11 +81,11 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <!-- Links de navegación -->
                     <ul class="navbar-nav w-100 justify-content-around">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../paginas/productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../paginas/nosotros.html">Sobre Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../paginas/faq.html">FAQ</a></li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1000"><a class="nav-link" href="../index.html"><span class="link-icon" aria-hidden="true">🏠 Inicio</span></a></li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1250"><a class="nav-link active" href="../paginas/productos.html"><span class="link-icon" aria-hidden="true">🛒 Productos</span></a></li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1500"><a class="nav-link" href="../paginas/nosotros.html"><span class="link-icon" aria-hidden="true">👥 Sobre Nosotros</span></a></li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="1750"><a class="nav-link" href="../paginas/contacto.html"><span class="link-icon" aria-hidden="true">💬 Contacto</span></a></li>
+                        <li class="nav-item" data-aos="fade-up" data-aos-duration="2000"><a class="nav-link" href="../paginas/faq.html"><span class="link-icon" aria-hidden="true">❓ FAQ</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -79,17 +94,18 @@
 
     <main>
         <section class="imgPublicidadProductos centrado">
-            <p class="titulo-publicidad-productos">BIENVENIDO A LA PÁGINA DE PRODUCTOS</p>
+            <div data-aos="flip-down" data-aos-duration="1000">
+                <p class="titulo-publicidad-productos">BIENVENIDO A LA PÁGINA DE PRODUCTOS</p>
 
-            <p class="mb-0">Llevá tu juego al siguiente nivel con nuestra ropa deportiva diseñada para destacarte en cada momento. Mezclamos estilo urbano con rendimiento total, para que entrenes con actitud y comodidad. Inspirate, movete y conquistá cada desafío con prendas versátiles que acompañan tu ritmo. Elegí tu look, expresá tu esencia y viví el deporte.</p>
+                <p class="mb-0">Llevá tu juego al siguiente nivel con nuestra ropa deportiva diseñada para destacarte en cada momento. Mezclamos estilo urbano con rendimiento total, para que entrenes con actitud y comodidad. Inspirate, movete y conquistá cada desafío con prendas versátiles que acompañan tu ritmo. Elegí tu look, expresá tu esencia y viví el deporte.</p>
+            </div>
         </section>
 
-        <h2 class="centrado">PRODUCTOS</h2>
+        <h2>PRODUCTOS</h2>
 
         <section class="p-4 d-grid gap-5">
             <article class="contenedorArtProducto">
-                <img src="../imgs/remeraNike.webp" alt="Remera Nike Sportswear Blanca"
-                    class="producto-imagen animacion">
+                <img src="../imgs/remeraNike.webp" alt="Remera Nike Sportswear Blanca con logo Just Do It" class="producto-imagen animacion">
                 <div>
                     <h3 class="titulo-producto mt-3">Remera Nike Sportswear Blanca</h3>
                     <p>Remera de corte clásico con diseño urbano y deportivo. Confeccionada en algodón suave, ideal para entrenar o usar a diario. Su color blanco y logo Nike aportan estilo, comodidad y versatilidad en cualquier ocasión. </p>
@@ -114,8 +130,7 @@
             </article>
 
             <article class="contenedorArtProducto">
-                <img src="../imgs/pantalonPuma.jpeg" alt="Pantalon Puma Mercedes AMG Petronas Negro"
-                    class="producto-imagen animacion">
+                <img src="../imgs/pantalonPuma.jpeg" alt="Pantalón Puma Mercedes AMG Petronas color negro" class="producto-imagen animacion">
                 <div>
                     <h3 class="titulo-producto mt-3">Pantalon Puma Mercedes AMG Petronas Negro</h3>
                     <p>Diseño inspirado en la F1, con estilo moderno y detalles exclusivos. El pantalón combina confort,
@@ -144,7 +159,7 @@
             </article>
 
             <article class="contenedorArtProducto">
-                <img src="../imgs/zapatillasAdidas.webp" alt="Zapatillas De Running Adidas Runfalcon 5 Negra"
+                <img src="../imgs/zapatillasAdidas.webp" alt="Zapatillas negras Adidas Runfalcon 5 de running"
                     class="producto-imagen animacion">
                 <div>
                     <h3 class="titulo-producto mt-3">Zapatillas De Running Adidas Runfalcon 5 Negra</h3>
@@ -169,21 +184,26 @@
     </main>
 
     <footer>
-        <p>Seguinos en nuestras redes:</p>
+        <p class="parrafoFooter">Seguinos en nuestras redes:</p>
         <nav>
             <ul class="lista-redes">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="#"><img src="../imgs/iconoInstagram.png" alt="logo de instagram" class="animacion"></a></li>
+                <li><a href="#"><img src="../imgs/iconoFacebook.png" alt="logo de facebook" class="animacion"></a></li>
+                <li><a href="#"><img src="../imgs/iconoTwitter.png" alt="logo de twitter" class="animacion"></a></li>
             </ul>
         </nav>
-        <p class="mt-4">© 2025 Furor City - Todos los derechos reservados</p>
+        <p class="mt-4 parrafoFooter">© 2025 Furor City - Todos los derechos reservados</p>
     </footer>
 
 
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

@@ -41,7 +41,6 @@ main {
 .imgPublicidadIndex {
     @include imgBackgroundPublicidad (url(../imgs/publicidadIndex.webp), top, no-repeat, cover);
     
-    height: auto;
     padding: 8rem;
 
     .titulo-publicidad-index {
@@ -75,7 +74,6 @@ main {
 .imgPublicidadProductos {
     @include imgBackgroundPublicidad (url(../imgs/publicidadProductos.webp), center, repeat, contain);
     
-    height: auto;
     padding: 6rem;
 
     .titulo-publicidad-productos {

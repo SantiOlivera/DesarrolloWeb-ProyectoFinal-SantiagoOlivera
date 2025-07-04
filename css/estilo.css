@@ -131,7 +131,6 @@ main h2 {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
   padding: 8rem;
 }
 .contenedorProductoIndex .contenedorArtIndex {
@@ -150,7 +149,6 @@ main h2 {
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
-  height: auto;
   padding: 6rem;
 }
 .contenedorArtProducto {

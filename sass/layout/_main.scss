@@ -39,7 +39,9 @@ main {
 
 /* Edición de la página "index" */
 .imgPublicidadIndex {
-    @include imgBackgroundPublicidad (url(../imgs/publicidadIndex.png), top, no-repeat, cover);
+    @include imgBackgroundPublicidad (url(../imgs/publicidadIndex.webp), top, no-repeat, cover);
+    
+    height: auto;
     padding: 8rem;
 
     .titulo-publicidad-index {
@@ -71,8 +73,9 @@ main {
 
 /* Edición de la página "productos" */
 .imgPublicidadProductos {
-    @include imgBackgroundPublicidad (url(../imgs/publicidadProductos.png), center, repeat, contain);
-
+    @include imgBackgroundPublicidad (url(../imgs/publicidadProductos.webp), center, repeat, contain);
+    
+    height: auto;
     padding: 6rem;
 
     .titulo-publicidad-productos {
